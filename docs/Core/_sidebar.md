@@ -1,6 +1,10 @@
-- [Core](docs/Core/README.md)
+- [Core](/docs/Core/README.md)
 
-  - [Updates](docs/Core/Updates.md)
+  - [Examples](/docs/Core/Examples.md)
+  - [Help](/docs/Core/Help.md)
+  - [Updates](/docs/Core/Updates.md)
 
-  - [AMM](docs/Core/AMM/README.md)
+  - [AMM](/docs/Core/AMM/README.md)
+
+- [Frontier](/docs/Frontier/README.md)
 

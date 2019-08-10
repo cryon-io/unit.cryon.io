@@ -1,4 +1,8 @@
-# [Unit Core](https://github.com/cryon-io/unit)
+<div style="display: flex; align-items: center; justify-content:center; margin-top: 20px">
+<img src="assets/core-logo.png" width="125" />
+</div>
+
+# Unit Core
 
 Templating and management engine for simple setup and management of server side applications.
 

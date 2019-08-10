@@ -1,4 +1,4 @@
-- [Core](docs/Core/README.md)
+- [Core](/docs/Core/README.md)
 
-- [Frontier](docs/Frontier/README.md)
+- [Frontier](/docs/Frontier/README.md)
 

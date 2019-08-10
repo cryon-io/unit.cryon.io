@@ -1,3 +1,6 @@
+
 # The Unit
 
-> Simplifying the application deployment and management.
+<div style="display: flex; align-items: center; margin-top:50px; justify-content:center">
+<img src="assets/current-arch.png" width="700" />
+</div>

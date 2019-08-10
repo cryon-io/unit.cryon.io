@@ -1,5 +1,4 @@
 ```sh
-            `
             ======= Unit Core =======
 
     about                                           # prints about message
@@ -69,6 +68,4 @@
                                                     - unit binary updates (can be disabled with 'unit_auto_update':'false' under 'auto_update' object)
     status-report                                   # generates status report from machine (for troubleshooting purposes)
 
-`       )
-    },
 ```

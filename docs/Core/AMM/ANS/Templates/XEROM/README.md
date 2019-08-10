@@ -4,7 +4,7 @@
 
 ## Nodes & Requirements
 
-### [Chain Node](chain-node) 
+### Chain Node
 
 - **5000 XERO**
 - 1 CORE CPU
@@ -12,7 +12,9 @@
 - 16 GB HDD/SSD/SD Card
 - **public IP address**
 
-### [Xero Node](chain-node) 
+_[Setup](Setup.md)_
+
+### Xero Node 
 
 - **20000 XERO**
 - 1 CORE CPU
@@ -20,7 +22,9 @@
 - 40 GB SSD
 - **public IP address**
 
-### [Link Node](chain-node) 
+_[Setup](Setup.md)_
+
+### Link Node
 
 - **40000 XERO**
 - 2 CORE CPU
@@ -28,10 +32,14 @@
 - 80 GB SSD
 - **public IP address**
 
-### [Super Node](chain-node) 
+_[Setup](Setup.md)_
+
+### Super Node
 
 - **80000 XERO**
 - 2 CORE CPU
 - 8 GB RAM
 - 120 GB SSD
 - **public IP address** 
+
+_[Setup](Setup.md)_
