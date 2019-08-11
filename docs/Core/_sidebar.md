@@ -1,10 +1,12 @@
-- [Core](/docs/Core/README.md)
+- [Core](/docs/Core/README.md) <span class="item-count">(4 items)</span>
 
-  - [Examples](/docs/Core/Examples.md)
-  - [Help](/docs/Core/Help.md)
-  - [Updates](/docs/Core/Updates.md)
+  - [AMM](/docs/Core/AMM/README.md) <span class="item-count">(1 item)</span>
 
-  - [AMM](/docs/Core/AMM/README.md)
+  - [Examples](/docs/Core/Examples.md) 
 
-- [Frontier](/docs/Frontier/README.md)
+  - [Help](/docs/Core/Help.md) 
+
+  - [Updates](/docs/Core/Updates.md) 
+
+- [Frontier](/docs/Frontier/README.md) 
 

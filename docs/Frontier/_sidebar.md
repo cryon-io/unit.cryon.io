@@ -1,4 +1,4 @@
-- [Frontier](/docs/Frontier/README.md)
+- [Core](/docs/Core/README.md) <span class="item-count">(4 items)</span>
 
-- [Core](/docs/Core/README.md)
+- [Frontier](/docs/Frontier/README.md) 
 
