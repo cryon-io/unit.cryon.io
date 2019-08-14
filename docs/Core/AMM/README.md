@@ -2,8 +2,6 @@
 ## Executables
 
 - `amm`   # management binary
-- `cli`   # cli access to application
-- `is-up` # determines whether application runs
 
 ## AMM Properties
 
@@ -45,6 +43,8 @@
                                 # - includes parameters and envvar configured 
                                 # - includes information you want to show to user of the template
 --cli                           # Executes command with application specific cli if aplicable                    
+--is-running                    # if running exits with 0 and prints true
+                                # else exits with 1 and prints false
 --backup=<dest-dir>             # Backups application 
                                 # * Requires confirmation if destination file/folder already exists
 --restore=<source-dir>          # Restores application      
@@ -60,7 +60,7 @@ AMM Hooks are application specific operations which are called on specific event
 
 Available hooks:
 - `on-start`    - executes before start of the application
-                    - if exists with non zero code the start is interrupted 
+    - if exists with non zero code the start is interrupted 
 - `on-started`     - executes after application start
 - `on-stop`     - hook to ensure application exists gracefully if required
 
@@ -69,22 +69,28 @@ Available hooks:
 AMM Methods provides applications way to act based on AMM commands application specific way. They have to be defined in def.json in application template root as `"methods"` with method name as key and value as path to executable or script to execute with this method.
 
 Available methods:
-- `reset`       - executes when there is requested application 
+
+- `setup`           - ability to run application specific setup
+- `remove`          - ability to run application specific removal
+- `reset`           - executes when there is requested application 
 - `update`          - performs application specific operations required to update of application
 - `set-parameter`   - sets application parameter application specific way
-                    - gets one parameter in format: `<key>=<value>`
+    - gets one parameter in format: `<key>=<value>`
 - `set-envvar`      - sets application env variable application specific way
-                    - gets one parameter in format: `<key>=<value>`
+    - gets one parameter in format: `<key>=<value>`
 - `status`          - returns application specific status details
 - `about`           - returns application specific about
 - `backup`          - creates application specific backup package in /tmp/ and returns path to it
 - `restore`         - takes path to backup package parameter and restores application from it 
 - `fs-permissions`  - configures application specific fs permissions
 - `cli`             - executes command in application specific cli
+- `running`         - returns true of application is in running state
 
-*Each application should expose at least `about` and `status` methods*
+!> Non zero exit code = method failed.
 
-## Common AMM Application definition - def.json
+?> Each application should expose at least `about` and `status` methods.
+
+## Common AMM Application definition
 
 def.json provides application definition for AMM. 
 Has to define: 
