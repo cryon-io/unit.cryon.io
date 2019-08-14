@@ -12,14 +12,22 @@
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 
   <style>
+    :root {
+      --theme-color: #A3172A
+    }
+    .sidebar ul p.active>a {
+      color: var(--theme-color, #A3172A);
+      font-weight: 600;
+    }
+
     .sidebar-nav li {
       margin-top: 1em;
       margin-bottom: 1em;
     }
-    
+
     .sidebar-nav p {
       margin: 0px;
-      display: inline;
+      display: inline-block;
     }
 
     .sidebar-nav ul li a {
@@ -27,8 +35,12 @@
       display: inline;
     }
 
+    .section-link {
+      display: block !important;
+    }
+
     .sidebar-nav .item-count {
-      display: inline;
+      display: inline-block;
       color: gray;
       font-size: 12px;
       padding: var(--sidebar-nav-link-padding);
