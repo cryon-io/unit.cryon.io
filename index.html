@@ -15,36 +15,35 @@
     :root {
       --theme-color: #A3172A
     }
+
     .sidebar ul p.active>a {
       color: var(--theme-color, #A3172A);
       font-weight: 600;
     }
 
-    .sidebar-nav li {
-      margin-top: 1em;
-      margin-bottom: 1em;
+    .sidebar li:hover {
+      text-decoration: none !important;
     }
 
-    .sidebar-nav p {
-      margin: 0px;
-      display: inline-block;
+    .sidebar a:hover {
+      text-decoration: none !important;
     }
 
-    .sidebar-nav ul li a {
-      margin: 0px;
-      display: inline;
+    .sidebar a:hover .sidebar-menu-item-link {
+      text-decoration: underline !important;
     }
 
-    .section-link {
-      display: block !important;
-    }
-
-    .sidebar-nav .item-count {
-      display: inline-block;
-      color: gray;
+    .sidebar-item-count {
+      margin-left: 5px;
+      color: lightgrey;
       font-size: 12px;
-      padding: var(--sidebar-nav-link-padding);
+      text-decoration: none !important;
     }
+
+    .sidebar-item-count:hover {
+      text-decoration: none !important;
+    }
+
 
     /*.section-link::before {
       margin-right: 5px;
@@ -73,6 +72,36 @@
         namespace: undefined
       }
     }
+    window.$docsify.plugins = [
+      function (hook, vm) {
+        hook.doneEach(function (html, next) {
+          let els = document.querySelectorAll('span.sidebar-item-count')
+          //console.log(els)
+          /*const router = vm.router;
+
+          const hash = decodeURI(router.toURL(router.getCurrentPath()))
+*/
+          for (let el of els) {
+            const text = el.previousElementSibling.innerText;
+            el.previousElementSibling.innerText = "";
+            var node = document.createElement('span');
+            node.classList.add('sidebar-menu-item-link')
+            node.innerText = text;
+            el.previousElementSibling.appendChild(node);
+            el.previousElementSibling.appendChild(el)
+            /* if (el.parentElement.tagName === 'LI') {
+               const href = el.getAttribute('href')
+               console.log(href, hash)
+               if (hash.indexOf(href) === 0 || `${hash}.md`.indexOf(href) === 0) {
+                 console.log('here fs')
+                 el.parentElement.classList.add('active')
+               }
+             }*/
+          }
+          next(html)
+        })
+      }
+    ]
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
