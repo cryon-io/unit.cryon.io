@@ -4,9 +4,9 @@
     </div>
     <h4 class="download"> Download </h4>
     <h2 id="fontier_title" class="title">Unit Frontier</h2>
-    <a class="linux link link-grid link-disabled" href="" disabled><img class="link-logo" alt="for linux" src="/assets/linux.svg"/> <h4 class="link-name">Linux</h4></a>
+    <a class="linux link link-grid link-disabled" disabled><img class="link-logo" alt="for linux" src="/assets/linux.svg"/> <h4 class="link-name">Linux</h4></a>
     <a class="win link link-grid" onclick="download_windows()"><img class="link-logo" alt="for windows" src="/assets/win.svg"/> <h4 class="link-name">Windows</h4> </a>
-    <a class="mac link link-grid link-disabled" href="" disabled><img class="link-logo" alt="for mac" src="/assets/mac.svg"/>
+    <a class="mac link link-grid link-disabled" disabled><img class="link-logo" alt="for mac" src="/assets/mac.svg"/>
     <h4 class="link-name">Mac</h4> </a>
 </div>
 
