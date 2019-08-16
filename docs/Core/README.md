@@ -1,5 +1,5 @@
 <div style="display: flex; align-items: center; justify-content:center; margin-top: 20px">
-<img src="assets/core-logo.png" width="125" />
+<img src="assets/img/core-logo.png" width="125" />
 </div>
 
 # Unit Core

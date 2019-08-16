@@ -1,12 +1,12 @@
 <div id="download-grid">
     <div class="frontier-logo">
-        <img src="assets/frontier-logo.png" width="125" />
+        <img src="assets/img/frontier-logo.png" width="125" />
     </div>
     <h4 class="download"> Download </h4>
     <h2 id="fontier_title" class="title">Unit Frontier</h2>
-    <a class="linux link link-grid link-disabled" disabled><img class="link-logo" alt="for linux" src="/assets/linux.svg"/> <h4 class="link-name">Linux</h4></a>
-    <a class="win link link-grid" onclick="download_windows()"><img class="link-logo" alt="for windows" src="/assets/win.svg"/> <h4 class="link-name">Windows</h4> </a>
-    <a class="mac link link-grid link-disabled" disabled><img class="link-logo" alt="for mac" src="/assets/mac.svg"/>
+    <a class="linux link link-grid link-disabled" disabled><img class="link-logo" alt="for linux" src="/assets/img/linux.svg"/> <h4 class="link-name">Linux</h4></a>
+    <a class="win link link-grid" onclick="download_windows()"><img class="link-logo" alt="for windows" src="/assets/img/win.svg"/> <h4 class="link-name">Windows</h4> </a>
+    <a class="mac link link-grid link-disabled" disabled><img class="link-logo" alt="for mac" src="/assets/img/mac.svg"/>
     <h4 class="link-name">Mac</h4> </a>
 </div>
 
