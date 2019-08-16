@@ -60,7 +60,8 @@ window.download_windows = async function() {
 .download {
     grid-area: download;
     text-align: center;
-    margin-top: 0px !important;
+    margin-top: 50px !important;
+    color: var(--theme-color);
     margin-bottom: 50px !important;
 }
 
