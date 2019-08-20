@@ -6,7 +6,7 @@
 
 Management desktop application for simple setup and management of multiple servers running unit based applications.
 
-# Setup 
+## Setup 
 
 1. [Download Unit Frontier](/docs/Frontier/Download.md)
 2. Extract Frontier to location of your choice.
