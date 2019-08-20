@@ -6,5 +6,5 @@
 
 
 <div style="display: flex; align-items: center; margin-top:100px; justify-content:center;">
-<img src="assets/img/current-arch.png" width="700" />
+<img src="assets/img/current-arch.png" alt="Unit Architecture" width="700" />
 </div>

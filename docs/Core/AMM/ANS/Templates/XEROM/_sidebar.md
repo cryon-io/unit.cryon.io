@@ -8,7 +8,9 @@
 
       - [Templates](/docs/Core/AMM/ANS/Templates/README.md) <span class="sidebar-item-count">(1 item)</span>
 
-        - [XEROM](/docs/Core/AMM/ANS/Templates/XEROM/README.md) <span class="sidebar-item-count">(1 item)</span>
+        - [XEROM](/docs/Core/AMM/ANS/Templates/XEROM/README.md) <span class="sidebar-item-count">(2 items)</span>
+
+          - [Node Activation](/docs/Core/AMM/ANS/Templates/XEROM/Node%20Activation.md) 
 
           - [Setup](/docs/Core/AMM/ANS/Templates/XEROM/Setup.md) 
 
