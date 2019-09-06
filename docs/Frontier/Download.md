@@ -19,15 +19,14 @@ async function setDownloadUrls() {
         document.getElementById("fontier_title").innerText += ` v${data.tag_name}`
         //console.log(data.assets);
         for (const asset of data.assets) {
-            if (asset && asset.name.match(/Unit\.Frontier.*win.*/)) {
+             if (asset && asset.name.match(/[Uu]nit.[Ff]rontier.*[Ww]in.*/)) {
                 window.frontier_windows_url = asset.browser_download_url;
-
-                break;
             }
-            if (asset && asset.name.match(/Unit\.Frontier.*linux.*/)) {
-                window.frontier_linux_url = asset.browser_linux_url;
-
-                break;
+            if (asset && asset.name.match(/[Uu]nit.[Ff]rontier.*[Ll]inux.*/)) {
+                window.frontier_linux_url = asset.browser_download_url;
+            }
+            if (asset && asset.name.match(/[Uu]nit.[Ff]rontier.*[Mm]ac.*/)) {
+                window.frontier_mac_url = asset.browser_download_url;
             }
         }
     }
@@ -39,6 +38,9 @@ window.download_windows = async function() {
 }
 window.download_linux = async function() {
     window.open(window.frontier_linux_url, '_blank')
+}
+window.download_mac = async function() {
+    window.open(window.frontier_mac_url, '_blank')
 }
 </script>
 
