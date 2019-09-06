@@ -4,7 +4,7 @@
     </div>
     <h4 class="download"> Download </h4>
     <h2 id="fontier_title" class="title">Unit Frontier</h2>
-    <a class="linux link link-grid link-disabled" disabled><img class="link-logo" alt="for linux" src="/assets/img/linux.svg"/> <h4 class="link-name">Linux</h4></a>
+    <a class="linux link link-grid" onclick="download_linux()"><img class="link-logo" alt="for linux" src="/assets/img/linux.svg"/> <h4 class="link-name">Linux</h4></a>
     <a class="win link link-grid" onclick="download_windows()"><img class="link-logo" alt="for windows" src="/assets/img/win.svg"/> <h4 class="link-name">Windows</h4> </a>
     <a class="mac link link-grid link-disabled" disabled><img class="link-logo" alt="for mac" src="/assets/img/mac.svg"/>
     <h4 class="link-name">Mac</h4> </a>
@@ -19,8 +19,13 @@ async function setDownloadUrls() {
         document.getElementById("fontier_title").innerText += ` v${data.tag_name}`
         //console.log(data.assets);
         for (const asset of data.assets) {
-            if (asset && asset.name.match(/Unit\.Frontier.*/)) {
+            if (asset && asset.name.match(/Unit\.Frontier.*win.*/)) {
                 window.frontier_windows_url = asset.browser_download_url;
+
+                break;
+            }
+            if (asset && asset.name.match(/Unit\.Frontier.*linux.*/)) {
+                window.frontier_linux_url = asset.browser_linux_url;
 
                 break;
             }
@@ -31,6 +36,9 @@ setDownloadUrls();
 
 window.download_windows = async function() {
     window.open(window.frontier_windows_url, '_blank')
+}
+window.download_linux = async function() {
+    window.open(window.frontier_linux_url, '_blank')
 }
 </script>
 

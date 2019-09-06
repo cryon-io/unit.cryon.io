@@ -61,8 +61,10 @@ AMM Hooks are application specific operations which are called on specific event
 Available hooks:
 - `on-start`    - executes before start of the application
     - if exists with non zero code the start is interrupted 
-- `on-started`     - executes after application start
+- `on-started`  - executes after application start
 - `on-stop`     - hook to ensure application exists gracefully if required
+- `on-updated`  - hook to perform post update routines
+    - if exists with non zero code the update failed 
 
 ## Common AMM Template Methods
 
@@ -70,21 +72,30 @@ AMM Methods provides applications way to act based on AMM commands application s
 
 Available methods:
 
+- `start`           - ability to run application specific start
+- `stop`            - ability to run application specific stop
+
+- `fs-permissions`  - configures application specific fs permissions
 - `setup`           - ability to run application specific setup
+
 - `remove`          - ability to run application specific removal
 - `reset`           - executes when there is requested application 
+
 - `update`          - performs application specific operations required to update of application
+    - if exists with non zero code the start is interrupted 
 - `set-parameter`   - sets application parameter application specific way
     - gets one parameter in format: `<key>=<value>`
 - `set-envvar`      - sets application env variable application specific way
     - gets one parameter in format: `<key>=<value>`
-- `status`          - returns application specific status details
-- `about`           - returns application specific about
-- `backup`          - creates application specific backup package in /tmp/ and returns path to it
-- `restore`         - takes path to backup package parameter and restores application from it 
-- `fs-permissions`  - configures application specific fs permissions
 - `cli`             - executes command in application specific cli
+
+- `backup`          - creates application specific backup package 
+    - path to backup destination is $1
+- `restore`         - takes path to backup package parameter and restores application from it 
+
+- `status`          - returns application specific status details
 - `running`         - returns true of application is in running state
+- `about`           - returns application specific about
 
 !> Non zero exit code = method failed.
 
@@ -104,6 +115,9 @@ It should define:
 {
     "version" : 0.21,
     "name" : "Awesome application",
+    "dependencies" : [
+
+    ],
     "hooks" : {
         "on-start": "hooks/before-start.sh",
         "on-started": "hooks/after-start.sh",
