@@ -6,7 +6,7 @@
 
       - [Help](/docs/Core/AMM/ANS/Help.md) 
 
-      - [Templates](/docs/Core/AMM/ANS/Templates/README.md) <span class="sidebar-item-count">(1 item)</span>
+      - [Templates](/docs/Core/AMM/ANS/Templates/README.md) <span class="sidebar-item-count">(2 items)</span>
 
   - [Examples](/docs/Core/Examples.md) 
 

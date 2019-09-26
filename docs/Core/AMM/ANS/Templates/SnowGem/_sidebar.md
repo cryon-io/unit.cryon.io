@@ -6,7 +6,13 @@
 
       - [Help](/docs/Core/AMM/ANS/Help.md) 
 
-      - [Templates](/docs/Core/AMM/ANS/Templates/README.md) <span class="sidebar-item-count">(1 item)</span>
+      - [Templates](/docs/Core/AMM/ANS/Templates/README.md) <span class="sidebar-item-count">(2 items)</span>
+
+        - [SnowGem](/docs/Core/AMM/ANS/Templates/SnowGem/README.md) <span class="sidebar-item-count">(2 items)</span>
+
+          - [Node Activation](/docs/Core/AMM/ANS/Templates/SnowGem/Node%20Activation.md) 
+
+          - [Setup](/docs/Core/AMM/ANS/Templates/SnowGem/Setup.md) 
 
         - [XEROM](/docs/Core/AMM/ANS/Templates/XEROM/README.md) <span class="sidebar-item-count">(2 items)</span>
 
