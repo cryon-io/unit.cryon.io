@@ -54,7 +54,7 @@ Available setup options are:
     - `mn_status` should say `Hot node, waiting for remote activation`
     - block_number is increasing
 6. Wait till your node is synced.
-7. [Activate Node](Node Activation.md)
+7. [Activate Node](Node%20Activation.md)
 8. Check node is working properly with `unit i`
     - `mn_status` should say `Masternode successfully started`
 
