@@ -1,7 +1,7 @@
 # Setup SnowGem Masternode
 
 Available setup options are: 
-- [Unit (medium)](/docs/Core/AMM/ANS/Templates/XEROM/Setup?id=unit-core-setup).
+- [Unit (medium)](/docs/Core/AMM/ANS/Templates/SnowGem/Setup?id=unit-core-setup).
 
 ## Unit Core Setup 
 
