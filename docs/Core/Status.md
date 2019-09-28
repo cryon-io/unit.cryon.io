@@ -3,7 +3,7 @@
 ## App Versions
 
 <app-list> </app-list>
-
+* Availability is availability of daemon files
 
 <script v-pre>
 
@@ -61,8 +61,7 @@ Vue.component('app-list', {
                 { title: "Ether1 SN/MN", repository: "Ether1Project/Ether-1-SN-MN-Binaries" },
                 { title: "Ether1 GN", repository:"Ether1Project/Ether-1-GN-Binaries" },
                 { title: "Gincoin", repository: "GIN-coin/gincoin-core", fileRegex: /binaries.*linux.*64bit/ },
-                { title: "Crown SN", repository: "Crowndev/crown-core", fileRegex: /Crown.*Linux.*64\.zip/ },
-                { title: "Crown MN", repository: "Crowndev/crown-core", fileRegex: /Crown.*Linux.*64\.zip/ },
+                { title: "Crown", repository: "Crowndev/crown-core", fileRegex: /Crown.*Linux.*64\.zip/ },
                 { title: "Ulead", repository: "uleadapp/ulead", fileRegex: /x86_64.*linux/ },
                 { title: "Horizen SN", special: true, note: "apt based" },
                 { title: "Airwire", repository: "AirWireOfficial/wire-core", fileRegex: [ /x86_64-linux/, /(?!.*qt.*).*/ ] },
