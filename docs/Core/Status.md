@@ -117,15 +117,6 @@ Vue.component('app-list', {
                 <div style="grid-column: 3/4">{{ app.available == true ? "available" : app.available }}</div>
             </template>
 
-        </div>`,
-    style: `
-        li {
-            color: red;
-        }
-        .app-grid {
-            display: grid;
-            grid-template-columns: auto auto auto 1fr;
-        }
-    `
+        </div>`
 })
 </script>
