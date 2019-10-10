@@ -104,6 +104,7 @@ Vue.component('app-status', {
 
         const url = "https://api.github.com/repos/cryon-io/Unit-Frontier/releases/latest";
         const latest = await axios.get(url);
+
         if (latest && latest.data) {
             const data = latest.data;
             this.latest += ` v${data.tag_name}`
@@ -126,13 +127,13 @@ Vue.component('app-status', {
     },
     methods: {
         download_windows() {
-            window.open(window.frontier_windows_url, '_blank')
+            window.open(this.frontier_windows_url, '_blank')
         },
         download_linux() {
-            window.open(window.frontier_linux_url, '_blank')
+            window.open(this.frontier_linux_url, '_blank')
         },
         download_mac() {
-            window.open(window.frontier_mac_url, '_blank')
+            window.open(this.frontier_mac_url, '_blank')
         }
     },
     computed: {
